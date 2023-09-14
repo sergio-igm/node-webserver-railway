@@ -12,9 +12,7 @@ hbs.registerPartials(APP_HOME + '/views/partials')
 
 app.use(express.static('public'));
 
-app.get('/generic', (req, res) => {
-    res.sendFile(APP_HOME + '/public/generic.html');
-})
+
 
 app.get('/', (req, res) => {
     res.render('home.hbs', {
